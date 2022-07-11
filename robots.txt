@@ -1,0 +1,11 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+Sitemap: https://re-home.in.ua/sitemap.xml
