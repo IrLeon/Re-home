@@ -144,10 +144,307 @@
     </header>
 
     <div class="card card-body blur shadow-blur mx-3 mx-md-6 mt-n6">
+
+<!-- Payment block -->
+      <section class="pt-3">
+        <div class="container pt-5 card bg-gray-200 mx-auto">
+          <div class="row">
+            <!-- Left payment side -->
+            <div class="col-lg-8 col-12 pb-5 brake_line d-flex flex-column">
+              <!-- Title - Допомогти відбудувати Україну  -->
+              <div class="row">
+                <h3 class="text-center mb-3" >Допомогти відбудувати Україну</h3>
+              </div>
+              <!-- Left checkbox -->
+              <div class="row payment_check py-4">
+                
+                <div class="col-12 ">
+                  <input class="cursor-pointer radio_button_width" name="payment_system" id="paypal" type="radio" >
+                  <label class="cursor-pointer h5" for="paypal">PayPal</label>
+                </div>
+                <div class="col-12">
+                  <input class="cursor-pointer" name="payment_system" id="wayforpay" type="radio">
+                  <label class="cursor-pointer h5" for="wayforpay">Way for Pay</label>
+                </div>
+                  <div class="col-12">
+                   <input class="cursor-pointer" name="payment_system" id="platon" type="radio">
+                   <label class="cursor-pointer h5" for="platon">Platon</label>
+                </div>
+                <div class="col-12">
+                  <input class="cursor-pointer" name="payment_system" id="monobank" type="radio">
+                  <label class="cursor-pointer h5" for="monobank">Monobank</label>
+                </div>
+                  
+              </div>
+               <!-- Left button -->
+              <div class="row mt-auto">
+                <div class="col-12">
+                  <a href="#" class="btn bg-gradient-info ">Створити платіж</a>
+                </div>
+              </div>
+              <!-- Left string link -->
+              <div class="row">
+                <div class="col-12 d-flex flex-column">
+                  <h6 class="text-secondary font-weight-normal mt-auto">Натискаючи кнопку створити платіж ви даєте згоду на <a class="text-info" href="#">обробку персональних даних</a></h6>
+                </div>
+              </div>
+            </div>
+
+              <!-- right payment side -->
+            <div class="col-lg-4 col-12 pb-5 px-4 nav_pay" >
+              
+              <div class="row text-center">
+                <label class="col-3 px-1" for="uan_click"><span class="pay_currency">UAN</span></label>
+                <label class="col-3 px-1" for="usd_click"><span class="pay_currency">USD</span></label>
+                <label class="col-3 px-1" for="eur_click"><span class="pay_currency">EUR</span></label>
+                <label class="col-3 px-1" for="btc_click"><span class="pay_currency">BTC</span></label>
+              </div>
+
+              <div class="row px-1">
+
+                <input type="radio" name="currency" id="uan_click" checked>
+                <input type="radio" name="currency" id="usd_click">
+                <input type="radio" name="currency" id="eur_click">
+                <input type="radio" name="currency" id="btc_click">
+              
+
+
+                <div class="col-12 currency mt-3 form-control-lg card mx-sm-0 px-0 py-0" id="uan">
+                  <div class="card-body">
+                    <div class="row">
+
+                      <div class="col-12"><strong>п/р (IBAN):</strong></div>
+                      <div class="col-10">UA073253650000000260000036312</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+                      <div class="col-10">в АТ «КРЕДОБАНК», м.Львів, МФО 325365</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+
+                      <div class="col-12"><strong>Отримувач:</strong></div>
+                      <div class="col-10">БО «БФ «ВІДБУДУЄМО РАЗОМ»</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+
+                      <div class="col-12"><strong>Код в ЄДРПОУ:</strong></div>
+                      <div class="col-10">44777028</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 currency mt-3 form-control-lg card mx-sm-0 px-0 py-0" id="usd">
+                  <div class="card-body">
+                    <div class="row">
+
+                      <div class="col-12"><strong>IBAN Code:</strong></div>
+                      <div class="col-10">UA693253650000000260070036313</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+                      <div class="col-10">Beneficiary: «REBUILD TOGETHER» C.F.</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+
+                      <div class="col-12"><strong>Beneficiary’s bank:</strong></div>
+                      <div class="col-10">JSC KREDOBANK, Lviv, Ukraine </div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+
+                      <div class="col-12"><strong>SWIFT:</strong></div>
+                      <div class="col-10">WUCBUA2X</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+
+                      <div class="col-12"><strong>Intermediary (correspondent):</strong></div>
+                      <div class="col-10">BANK OF NEW YORK MELLON, New York, USA</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 currency mt-3 form-control-lg card mx-sm-0 px-0 py-0" id="eur">
+                  <div class="card-body">
+                    <div class="row ">
+
+                      <div class="col-12"><strong>IBAN Code:</strong></div>
+                      <div class="col-10">UA873253650000000260040036314
+</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+                      <div class="col-10">Beneficiary: «REBUILD TOGETHER» C.F.</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+
+                      <div class="col-12"><strong>Beneficiary’s bank:</strong></div>
+                      <div class="col-10">JSC KREDOBANK, Lviv, Ukraine </div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+
+                      <div class="col-12"><strong>SWIFT:</strong></div>
+                      <div class="col-10">WUCBUA2X</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+
+                      <div class="col-12"><strong>Intermediary (correspondent):</strong></div>
+                      <div class="col-10">COMMERZBANK AG, Frankfurt, Germany</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+
+
+                    </div>
+                   
+                    
+                  </div>
+                </div>
+                <div class="col-12 currency mt-3 form-control-lg card mx-sm-0 px-0 py-0" id="btc">
+                  <div class="card-body">
+
+                   
+                    <div class="row">
+
+                      <div class="col-12"><strong>IBAN Code:</strong></div>
+                      <div class="col-10">UA693253650000000260070036313</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+                      <div class="col-10">Beneficiary: «REBUILD TOGETHER» C.F.</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+
+                      <div class="col-12"><strong>Beneficiary’s bank:</strong></div>
+                      <div class="col-10">JSC KREDOBANK, Lviv, Ukraine </div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+
+                      <div class="col-12"><strong>SWIFT:</strong></div>
+                      <div class="col-10">WUCBUA2X</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+
+                      <div class="col-12"><strong>Intermediary (correspondent):</strong></div>
+                      <div class="col-10">BANK OF NEW YORK MELLON, New York, USA</div>
+                      <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                      </div>
+
+
+
+                    </div>
+                   
+                    
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row px-1">
+
+                <div class="col-12 mt-3 form-control-lg card mx-sm-0 px-0 py-0 recalculations">
+                  <div class="card-body">
+                    Your charitable contributions will be enlisted in the national currency of Ukraine UAH, at the rate of the Visa/MasterCard payment system.
+                    For easier recalculations: 1 USD = 29.25 UAH
+                    Grateful thanks, for being with us!
+                  </div>
+                </div>
+
+                <div class="col-12 mt-3 form-control-lg card mx-sm-0 px-0 py-0 recalculations">
+                  <div class="card-body">
+                    Your charitable contributions will be enlisted in the national currency of Ukraine UAH, at the rate of the Visa/MasterCard payment system.
+                    For easier recalculations: 1 EUR = 32 UAH
+                    Grateful thanks, for being with us!
+                  </div>
+                </div>
+
+                <div class="col-12 mt-3 form-control-lg card mx-sm-0 px-0 py-0 recalculations">
+                  <div class="card-body">
+                    Your charitable contributions will be enlisted in the national currency of Ukraine UAH, at the rate of the Visa/MasterCard payment system.
+                    For easier recalculations: 1 BTC = ??? UAH
+                    Grateful thanks, for being with us!
+                  </div>
+                </div>
+                
+              </div>
+
+            </div>
+        </div>
+      </section>
+
+
       <section class="pt-3" id="count-stats">
         <div class="container">
           <div class="row">
-            <div class="col-lg-9 mx-auto py-1">
+            <div class="col-lg-12 mx-auto py-1">
               <div class="row">
                 <div class="col-md-4 position-relative">
                   <div class="p-3 text-center">
@@ -1245,5 +1542,6 @@ tyytyt
         }
       }
     </script>
+    <script src="./assets/js/payment-block.js"></script>
   </body>
 </html>
