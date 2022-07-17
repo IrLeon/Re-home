@@ -27291,12 +27291,22 @@ pre[class*="language-"] {
 
 
 
-.red{
-  border: 1px solid red !important;
-}
+
+
+
+
+
+
+
+
 
 
 /* Payment-block NEW STYLE */
+
+.paymentblock_title{
+  /* line-height:  15px; */
+  margin-top: -15px;
+}
 
 /* brake_line */
 
@@ -27306,11 +27316,11 @@ pre[class*="language-"] {
 .brake_line:before{
   content: "";
   position: absolute;
-  top: 10%;
+  top: 0;
   right: 0;
   display: block;
   width: 1px;
-  height: 80%;
+  height: 85%;
   background-color: var(--bs-gray-500);
 
 }
@@ -27321,40 +27331,24 @@ pre[class*="language-"] {
 }
 .payment_check label{
   position: relative;
-  padding-left: 45px; 
+  padding-left: 30px; 
   padding-bottom: 5px;
 }
 .payment_check label:before {
 	content: "";
 	display: block;
-	width: 20px;
-	height: 20px;
+	width: 15px;
+	height: 15px;
   border-radius: 50%;
 	position: absolute;
 	left: 0;
-  top: 2px;
+  top: 5px;
   outline: 2px solid #49a3f1;
   border: 2px solid white ;
-  
 }
 
 .payment_check input[type='radio']:checked + label:before{
   background-color: var(--bs-info);
-}
-
-@media (max-width: 991px) {
-
-  .brake_line:before{
-    content: "";
-    position: absolute;
-    top: 10%;
-    right: 0;
-    display: none;
-    width: 1px;
-    height: 80%;
-    background-color: var(--bs-gray-500);
-  
-  }
 }
 
 /* payment transactions */
@@ -27366,12 +27360,8 @@ pre[class*="language-"] {
   margin: 0;
   padding: 0;
   font-family: Roboto;
-
 }
 .nav_pay label>span{
-  /* background-image: linear-gradient(195deg, #49a3f1 0%, #1A73E8 100%); */
-  /* background-image: linear-gradient(195deg, #c4c4c4 0%, #c4c4c4 100%); */
-  /* color: white; */
   display: inline-block;
   width: 100% ;
   cursor: pointer;
@@ -27396,26 +27386,57 @@ pre[class*="language-"] {
   display: block;
 }
 
-
-
-
-.nine{
-  display: none;
+/* Copy button */
+.pop_up_copy_info{
+  position: relative;
 }
-
-.copy_button {
-  background-image: linear-gradient(195deg, #49a3f1 0%, #1A73E8 100%);
-  width: 90px;
+.pop_up_copy_info span{
+  font-size: 10px;
+  white-space: nowrap;
   text-align: center;
-  padding: 3px 0;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  
+  position: absolute;
+  top: 15px ;
+  right: -55px;
+  background-color: white;
+  display: none;
+  border: 1px solid black;
+  padding: 1px;
+  padding: 0 3px;
+  z-index: 1;
 
+}
+.pop_up_copy_info:hover span{
+  display: block;
+}
+
+
+@media (max-width: 991px) {
+  .brake_line:before{
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 0;
+    display: none;
+    width: 1px;
+    height: 80%;
+    background-color: var(--bs-gray-500);
+  }
+  /* .pop_up_copy_info span{
+    top: 3px ;
+    right: 35px;
+  } */
 
 }
 
+/* @media (max-width: 500px) {
+  .pop_up_copy_info:hover span{
+    display: none;
+  }
+} */
+
+.red{
+  border: 1px solid red;
+}
 
 
 
