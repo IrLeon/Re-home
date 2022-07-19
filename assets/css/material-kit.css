@@ -27305,7 +27305,7 @@ pre[class*="language-"] {
 
 .paymentblock_title{
   /* line-height:  15px; */
-  margin-top: -15px;
+  margin-top: -5px;
 }
 
 /* brake_line */
@@ -27415,6 +27415,7 @@ pre[class*="language-"] {
     content: "";
     position: absolute;
     top: 10%;
+    
     right: 0;
     display: none;
     width: 1px;
@@ -27438,5 +27439,8 @@ pre[class*="language-"] {
   border: 1px solid red;
 }
 
+.button_wrap{
+  white-space: nowrap;
+}
 
 

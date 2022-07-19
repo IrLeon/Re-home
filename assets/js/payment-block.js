@@ -1,7 +1,13 @@
 "use sting";
 
+
+
+/*
+-------------------------------------------
+CURRENCY TOGGLE
+-------------------------------------------
+*/
 let button = document.getElementsByClassName("pay_currency");
-let rec = document.getElementsByClassName("recalculations");
 
 for (let key in button) {
   button[0].style.backgroundImage =
@@ -17,43 +23,15 @@ for (let key in button) {
       button[i].style.color = "#49a3f1";
       button[key].style.color = "#fff";
 
-      for (let k = 0; k < rec.length; k++) {
-        rec[k].style.display = "none";
-      }
-
-      if (key > 0) {
-        rec[key - 1].style.display = "block";
-      }
     }
   };
 }
 
-// function copyFunction(copyButton) {
-//   copyButton.style.color = "blue";
-//   let copyText = document.getElementById("copy_text");
-
-//   let a = document.getElementById("copy_info");
-//   a.innerHTML = 'Текст скопійовано';
-
-//   /* Copy the text inside the text field */
-
-//   navigator.clipboard.writeText(copyText.innerHTML);
-
-//   let start = Date.now();
-
-//   let timer = setInterval(function () {
-//     let timePassed = Date.now() - start;
-
-//     if (timePassed > 2800) {
-//       copyButton.style.color = "grey";
-//       a.innerHTML = 'Скопіювати текст';
-//     }
-   
-
-//     if (timePassed > 3000) clearInterval(timer);
-//   });
-// }
-
+/*
+-------------------------------------------
+COPY STRINGS (PAYMENT)
+-------------------------------------------
+*/
 
 let copyButton = document.getElementsByClassName('copy_button');
 

@@ -148,14 +148,22 @@
       <section class="pt-3">
         <div class="container pt-5 card bg-gray-200 mx-auto">
           <div class="row">
+
+             <!-- Middle payment side TITLE Допомогти відбудувати Україну -->
+            <div class="col-12 pb-3">
+              <div class="row">
+                <h3 class="text-center" >Допомогти відбудувати Україну</h3>
+              </div>
+            </div>
+
             <!-- Left payment side -->
             <div class="col-lg-7 col-12 pb-5 brake_line d-flex flex-column">
               <!-- Title - Допомогти відбудувати Україну  -->
               <div class="row">
-                <h3 class="text-center paymentblock_title" >Допомогти відбудувати Україну</h3>
+                <h5 class="text-center  paymentblock_title">Здійснити благодійний внесок</h5>
               </div>
               <!-- Left checkbox -->
-              <div class="row payment_check py-4">
+              <!-- <div class="row payment_check py-4">
                 
                 <div class="col-12 ">
                   <input class="cursor-pointer radio_button_width" name="payment_system" id="paypal" type="radio" >
@@ -174,17 +182,43 @@
                   <label class="cursor-pointer h6" for="monobank">Monobank</label>
                 </div>
                   
-              </div>
+              </div> -->
+
                <!-- Left button -->
-              <div class="row mt-auto">
-                <div class="col-12">
-                  <a href="#" class="btn bg-gradient-info ">Створити платіж</a>
+              <div class="row pt-3">
+                <div class="col-12 col-md-6 text-center button_width">
+                  <form action="https://www.paypal.com/donate" method="post"  target="_blank">
+                    <input type="hidden" name="hosted_button_id" value="F3YY4W9CNJ8UW" />
+                    <input class="btn bg-gradient-info col-12 button_wrap" type="submit" border="0" name="PayPal" value="PayPal" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                  </form>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                  <a href="https://rehome.pay.whitepay.com/" target="_blank" class="btn bg-gradient-info col-md-12 col-12 button_wrap ">White pay</a>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                  <a href="#" class="btn bg-gradient-info col-12 button_wrap">Way for Pay</a>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                  <a href="#" class="btn bg-gradient-info col-12 button_wrap">Monobank</a>
                 </div>
               </div>
+
+               <div class="row pb-4 mx-auto  mt-auto">
+
+                <div class="col-12 form-control-lg card py-0">
+                  <div class="card-body">
+                    Your charitable contributions will be enlisted in the national currency of Ukraine UAH, at the rate of the Visa/MasterCard payment system.
+                    For easier recalculations: 1 USD = 29.25 UAH
+                    Grateful thanks, for being with us!
+                  </div>
+                </div>
+              </div>
+
+              
               <!-- Left string link -->
               <div class="row">
                 <div class="col-12 d-flex flex-column">
-                  <h6 class="text-secondary font-weight-normal mt-auto">Натискаючи кнопку створити платіж ви даєте згоду на <a class="text-info" href="#">обробку персональних даних</a></h6>
+                  <h6 class="text-secondary font-weight-normal mt-auto">Натискаючи кнопку платіжної системи  ви даєте згоду на <a class="text-info" href="#">обробку персональних даних</a></h6>
                 </div>
               </div>
             </div>
@@ -196,7 +230,7 @@
                 <label class="col-3 px-1" for="uan_click"><span class="pay_currency">UAN</span></label>
                 <label class="col-3 px-1" for="usd_click"><span class="pay_currency">USD</span></label>
                 <label class="col-3 px-1" for="eur_click"><span class="pay_currency">EUR</span></label>
-                <label class="col-3 px-1" for="btc_click"><span class="pay_currency">BTC</span></label>
+                <label class="col-3 px-1" for="btc_click"><span class="pay_currency">CRYPTO</span></label>
               </div>
 
               <div class="row px-1">
@@ -207,7 +241,7 @@
                 <input type="radio" name="currency" id="btc_click">
               
 
-
+                <!-- REQUISITES UAN -->
                 <div class="col-12 currency mt-3 form-control-lg card mx-sm-0 px-0 py-0" id="uan">
                   <div class="card-body">
                     <div class="row">
@@ -247,10 +281,21 @@
                         </svg>
                         <span class="copy_info">Скопіювати</span>
                       </div>
+                      
+
+                      <div class="col-12"><strong>Призначення платежу:</strong></div>
+                      <div class="col-10 copy_text">Благодійна допомога</div>
+                      <div class="col-2 pop_up_copy_info text-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files copy_button" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                        <span class="copy_info">Скопіювати</span>
+                      </div>
 
                     </div>
                   </div>
                 </div>
+                 <!-- REQUISITES USD -->
                 <div class="col-12 currency mt-3 form-control-lg card mx-sm-0 px-0 py-0" id="usd">
                   <div class="card-body">
                     <div class="row">
@@ -300,12 +345,22 @@
                         </svg>
                         <span class="copy_info">Скопіювати</span>
                       </div>
+                      
+                      <div class="col-12"><strong>Purpose of payment:</strong></div>
+                      <div class="col-10 copy_text">Charity</div>
+                      <div class="col-2 pop_up_copy_info text-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files copy_button" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                        <span class="copy_info">Скопіювати</span>
+                      </div>
 
 
 
                     </div>
                   </div>
                 </div>
+                 <!-- REQUISITES EUR -->
                 <div class="col-12 currency mt-3 form-control-lg card mx-sm-0 px-0 py-0" id="eur">
                   <div class="card-body">
                     <div class="row ">
@@ -357,6 +412,15 @@
                         <span class="copy_info">Скопіювати</span>
                       </div>
 
+                      <div class="col-12"><strong>Purpose of payment:</strong></div>
+                      <div class="col-10 copy_text">Charity</div>
+                      <div class="col-2 pop_up_copy_info text-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files copy_button" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                        <span class="copy_info">Скопіювати</span>
+                      </div>
+
 
 
                     </div>
@@ -364,6 +428,7 @@
                     
                   </div>
                 </div>
+                 <!-- REQUISITES CRYPTO -->
                 <div class="col-12 currency mt-3 form-control-lg card mx-sm-0 px-0 py-0" id="btc">
                   <div class="card-body">
 
@@ -417,6 +482,18 @@
                       </div>
 
 
+                      <div class="col-12"><strong>Purpose of payment:</strong></div>
+                      <div class="col-10 copy_text">Charity</div>
+                      <div class="col-2 pop_up_copy_info text-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files copy_button" viewBox="0 0 16 16">
+                          <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                        </svg>
+                        <span class="copy_info">Скопіювати</span>
+                      </div>
+
+
+                      <div class="col-12 copy_text pt-3">Всі вказані рахунки є транзитними, кошти з них будуть перераховані згідно чинного законодавства на рахунки громадської організації Демократична Сокира.</div>
+
 
                     </div>
                    
@@ -426,35 +503,9 @@
 
               </div>
 
-              <div class="row px-1">
-
-                <div class="col-12 mt-3 form-control-lg card mx-sm-0 px-0 py-0 recalculations">
-                  <div class="card-body">
-                    Your charitable contributions will be enlisted in the national currency of Ukraine UAH, at the rate of the Visa/MasterCard payment system.
-                    For easier recalculations: 1 USD = 29.25 UAH
-                    Grateful thanks, for being with us!
-                  </div>
-                </div>
-
-                <div class="col-12 mt-3 form-control-lg card mx-sm-0 px-0 py-0 recalculations">
-                  <div class="card-body">
-                    Your charitable contributions will be enlisted in the national currency of Ukraine UAH, at the rate of the Visa/MasterCard payment system.
-                    For easier recalculations: 1 EUR = 32 UAH
-                    Grateful thanks, for being with us!
-                  </div>
-                </div>
-
-                <div class="col-12 mt-3 form-control-lg card mx-sm-0 px-0 py-0 recalculations">
-                  <div class="card-body">
-                    Your charitable contributions will be enlisted in the national currency of Ukraine UAH, at the rate of the Visa/MasterCard payment system.
-                    For easier recalculations: 1 BTC = ??? UAH
-                    Grateful thanks, for being with us!
-                  </div>
-                </div>
-                
-              </div>
-
             </div>
+
+          </div>
         </div>
       </section>
 
