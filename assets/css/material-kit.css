@@ -27369,6 +27369,7 @@ pre[class*="language-"] {
   color: #49a3f1;
   border: 1px solid #49a3f1;
   border-radius: 4px;
+  line-height: 26px;
 }
 
 .nav_pay input[type='radio']:checked .nav_pay label {
@@ -27441,6 +27442,8 @@ pre[class*="language-"] {
 
 .button_wrap{
   white-space: nowrap;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 
