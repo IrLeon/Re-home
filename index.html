@@ -182,21 +182,42 @@
               </div> -->
 
                <!-- Left button -->
-              <div class="row ">
+               <div class="row ">
                 <div class="col-12 col-md-6 text-center button_width">
                   <form action="https://www.paypal.com/donate" method="post"  target="_blank">
                     <input type="hidden" name="hosted_button_id" value="F3YY4W9CNJ8UW" />
-                    <input class="btn bg-gradient-info col-12 button_wrap" type="submit" border="0" name="PayPal" value="PayPal" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <input style="display: none;" id="palicon"  type="submit" border="0" name="PayPal" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" >
+                    <label class="btn bg-gradient-info col-12 button_wrap mx-0" for="palicon">Paypal
+                      <i class="fa fa-brands fa-paypal"></i>
+                      <i class="fa fa-cc-visa" aria-hidden="true"></i> 
+                      <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                    </label>
                   </form>
                 </div>
                 <div class="col-12 col-md-6 text-center">
-                  <a href="https://rehome.pay.whitepay.com/" target="_blank" class="btn bg-gradient-info col-md-12 col-12 button_wrap ">White pay</a>
+                  <a href="https://rehome.pay.whitepay.com/" target="_blank" class="btn bg-gradient-info col-md-12 col-12 button_wrap " >White pay
+                    <i class="fa fa-cc-visa" aria-hidden="true"></i> 
+                    <i class="fa fa-cc-mastercard" aria-hidden="true"></i> 
+                    <i class='fab fa-btc'></i>
+                    
+                  </a>  
+            
                 </div>
                 <div class="col-12 col-md-6 text-center">
-                  <a href="#" class="btn bg-gradient-info col-12 button_wrap">Way for Pay</a>
+                  <a href="https://secure.wayforpay.com/donate/dca5bb0033026" class="btn bg-gradient-info col-12 button_wrap">Way for Pay
+                    <i class="fa fa-cc-visa" aria-hidden="true"></i> 
+                    <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                  </a>
                 </div>
                 <div class="col-12 col-md-6 text-center">
-                  <a href="#" class="btn bg-gradient-info col-12 button_wrap">Monobank</a>
+                  <a href="https://devplaton.com.ua/invoices/re-home.en/" class="btn bg-gradient-info col-12 button_wrap">Platon 
+                    <i class="fa fa-cc-visa" aria-hidden="true"></i> 
+                    <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                    <i class="fab fa-brands fa-apple-pay fa-lg"></i>
+                    <i class="fab fa-brands fa-google-pay fa-lg"></i>
+                    
+                  </a>
+                  
                 </div>
               </div>
 
@@ -204,7 +225,7 @@
 
                 <div class="col-12 form-control-lg card py-0">
                   <div class="card-body">
-                    Ваші благодійні внески будуть зараховані в національній валюті України гривні за курсом платіжної системи Visa/MasterCard. Для зручності перерахунків: <span style="font-weight: 700;">1 USD = 29,25 UAH</span> Дякуємо, що Ви з нами!
+                    Ваші благодійні внески будуть зараховані в національній валюті України гривні за курсом платіжної системи Visa/MasterCard. Для зручності перерахунків: <span style="font-weight: 700;">1 USD = 36.57 UAH</span> Дякуємо, що Ви з нами!
                   </div>
                 </div>
               </div>
@@ -213,7 +234,7 @@
               <!-- Left string link -->
               <div class="row">
                 <div class="col-12 d-flex flex-column">
-                  <h6 class="text-secondary font-weight-normal mt-auto">Натискаючи кнопку платіжної системи  ви даєте згоду на <a class="text-info" href="#">обробку персональних даних</a></h6>
+                  <h6 class="text-secondary font-weight-normal mt-auto">Натискаючи кнопку платіжної системи  ви даєте згоду на <a class="text-info" data-bs-toggle="modal" href="#personalDataModal ">обробку персональних даних</a></h6>
                 </div>
               </div>
             </div>
@@ -487,7 +508,7 @@
                       </div>
 
 
-                      <div class="col-12 copy_text pt-3">Всі вказані рахунки є транзитними, кошти з них будуть перераховані згідно чинного законодавства на рахунки громадської організації CF "Rebuild together".</div>
+                      <div class="col-12 copy_text pt-3">Всі вказані рахунки є транзитними, кошти з них будуть перераховані згідно чинного законодавства на рахунки Благодійного Фонду "Відбудуємо разом".<div>
 
 
                     </div>
@@ -1125,6 +1146,83 @@ tyytyt
         </div>
       </div>
     </footer>
+
+
+    <!-- Modal personalDataModal-->
+    <div
+      class="modal fade"
+      id="personalDataModal"
+      tabindex="-1"
+      aria-labelledby="personalDataModalLable"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable" >
+        <div class="modal-content col-12 ">
+          <div class="modal-header bg-gradient-secondary">
+            <h5 class="modal-title text-white" id="personalDataModalLable">
+              ДОГОВІР ПУБЛІЧНОЇ ОФЕРТИ
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Ця публічна оферта про надання коштів та іншого майна (на далі – Оферта) в якості пожертви фізичних та юридичних осіб (надалі – Пожертводавець) спрямована на невизначене коло осіб та є публічною пропозицією Благодійного Фонду "Відбудуємо разом", в особі Голови Правління "?" (надалі – Організація), укласти договір про надання членських внесків/пожертви на наведених нижче умовах:
+
+
+            <br /><br />
+            <h4>1. Загальні положення</h4>
+            1.1. Договірні відносини мtіж Пожертводавцем та Організацією оформляються у
+            вигляді Договору публічної оферти. Натискання на сторінці Веб-сайту 
+            <a href="https://re-home.in.ua/" class="text-info">https://re-home.in.ua/</a>  
+            у відповідному розділі кнопки “СПЛАТИТИ”, означає, що Пожертводавець, незалежно
+            від правового
+            статусу (фізична особа, юридична особа), згідно чинного законодавства, прийняв умови Договору
+            публічної оферти (акцепт), які вказані нижче.
+            <br /><br />
+            1.2. Цей Договір є публічним, тобто відповідно до ст. 641 Цивільного 
+            кодексу України його умови однакові для всіх Пожертводавців.
+            <br /><br />
+            1.3. Даний Договір набуває чинності з моменту натискання на кнопку “СПЛАТИТИ”,
+            яким Пожертводавець надає згоду здійснити пожертву.
+            <br /><br />
+            1.4. Для регулювання договірних правовідносин за Договором Сторони обирають 
+            та, в разі необхідності, застосовують українське законодавство. Якщо 
+            міжнародним договором, згода на обов'язковість якого надана Верховною 
+            Радою України, встановлені інші правила, ніж ті, що встановлені українським 
+            законодавством, то застосовуються правила міжнародного договору.
+            <br /><br />
+            <h4>2. Поняття та визначення, що вживаються в Договорі</h4>
+            «Договір публічної оферти» – публічний договір, зразок якого 
+            розміщений на Веб-сайті <a href="https://re-home.in.ua/" class="text-info">https://re-home.in.ua/</a> , що містить пропозицію 
+            Організації щодо здійснення пожертви, спрямовану невизначеному колу осіб.
+            
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button
+              type="button"
+              class="btn bg-gradient-dark mb-0"
+              data-bs-dismiss="modal"
+            >
+              ЗАКРИТИ
+            </button>
+            <!-- <a
+              href="./help-us.html"
+              class="btn bg-gradient-info mb-0"
+              role="button"
+              aria-pressed="true"
+              >ДОЛУЧИТИСЬ</a
+            > -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 
     <!-- Modal dimModal-->
     <div

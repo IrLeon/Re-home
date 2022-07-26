@@ -27301,7 +27301,7 @@ pre[class*="language-"] {
 
 
 
-/* Payment-block NEW STYLE */
+* Payment/-block NEW STYLE */
 
 .paymentblock_title{
   /* line-height:  15px; */
@@ -27445,5 +27445,4 @@ pre[class*="language-"] {
   font-weight: 700;
   font-size: 13px;
 }
-
 
