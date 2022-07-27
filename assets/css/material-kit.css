@@ -20565,6 +20565,13 @@ fieldset:disabled .btn {
   color: #fff;
 }
 
+
+.btn.bg-gradient-info.text-capitalize {
+  color: #27364f;
+  font-size: 18px !important;
+  /* paymentstyle */
+}
+
 .btn-info:hover,
 .btn.bg-gradient-info:hover {
   color: #fff;
@@ -27301,7 +27308,7 @@ pre[class*="language-"] {
 
 
 
-* Payment/-block NEW STYLE */
+/* Payment-block NEW STYLE */
 
 .paymentblock_title{
   /* line-height:  15px; */
@@ -27423,18 +27430,7 @@ pre[class*="language-"] {
     height: 80%;
     background-color: var(--bs-gray-500);
   }
-  /* .pop_up_copy_info span{
-    top: 3px ;
-    right: 35px;
-  } */
-
 }
-
-/* @media (max-width: 500px) {
-  .pop_up_copy_info:hover span{
-    display: none;
-  }
-} */
 
 .red{
   border: 1px solid red;
@@ -27446,3 +27442,18 @@ pre[class*="language-"] {
   font-size: 13px;
 }
 
+/* currecy icons styles */
+.currency_icons{
+  height: 35px;
+  padding-bottom: 5px;
+}
+.googlepay_icon{
+  padding-bottom: 5px;
+  height: 22px;
+}
+.applepay_icon {
+  height: 32px;
+}
+.btc_icon{
+  height: 24px;
+}
