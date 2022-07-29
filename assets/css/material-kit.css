@@ -27327,35 +27327,9 @@ pre[class*="language-"] {
   right: 0;
   display: block;
   width: 1px;
-  height: 85%;
+  height: 95%;
   background-color: var(--bs-gray-500);
-
-}
-
-/* Checkbox payment  */
-.payment_check input[type='radio']{
-  display: none;
-}
-.payment_check label{
-  position: relative;
-  padding-left: 30px; 
-  padding-bottom: 5px;
-}
-.payment_check label:before {
-	content: "";
-	display: block;
-	width: 15px;
-	height: 15px;
-  border-radius: 50%;
-	position: absolute;
-	left: 0;
-  top: 5px;
-  outline: 2px solid #49a3f1;
-  border: 2px solid white ;
-}
-
-.payment_check input[type='radio']:checked + label:before{
-  background-color: var(--bs-info);
+  background: linear-gradient(180deg, rgba(173, 181, 189,0) 0%, rgba(173, 181, 189,1) 30%, rgba(173, 181, 189,1) 70%,  rgba(173, 181, 189,0) 100%);
 }
 
 /* payment transactions */
@@ -27447,6 +27421,13 @@ pre[class*="language-"] {
   height: 35px;
   padding-bottom: 5px;
 }
+
+@media (max-width: 370px) {
+  .currency_icons {
+    display: none;
+  }
+}
+
 .googlepay_icon{
   padding-bottom: 5px;
   height: 22px;
