@@ -64,7 +64,7 @@
 
   <body class="index-page bg-gray-200">
     <!-- Navbar -->
-    <div class="container position-sticky z-index-sticky top-0">
+    <div class="container position-relative z-index-sticky top-0">
       <div class="row">
         <div class="col-12">
           <nav
@@ -153,68 +153,63 @@
 
             <!-- Left payment side -->
             <div class="col-lg-7 col-12 pb-5 brake_line d-flex flex-column">
-              <!-- Left checkbox -->
-              <!-- <div class="row payment_check py-4">
-                
-                <div class="col-12 ">
-                  <input class="cursor-pointer radio_button_width" name="payment_system" id="paypal" type="radio" >
-                  <label class="cursor-pointer h6" for="paypal">PayPal</label>
+            
+               <!-- Left buttons -->
+               
+              <!-- <Блок оплаты карточкой -->
+               <div class="row pb-3 ">
+                <div class="col-12 text-center pb-2" >
+                 <h5>Payments with card</h5> 
                 </div>
-                <div class="col-12">
-                  <input class="cursor-pointer" name="payment_system" id="wayforpay" type="radio">
-                  <label class="cursor-pointer h6" for="wayforpay">Way for Pay</label>
-                </div>
-                  <div class="col-12">
-                   <input class="cursor-pointer" name="payment_system" id="platon" type="radio">
-                   <label class="cursor-pointer h6" for="platon">Platon</label>
-                </div>
-                <div class="col-12">
-                  <input class="cursor-pointer" name="payment_system" id="monobank" type="radio">
-                  <label class="cursor-pointer h6" for="monobank">Monobank</label>
-                </div>
+                 <!-- paypal -->
+                <!-- <div class="col-12 col-md-6 text-center">
                   
-              </div> -->
-
-               <!-- Left button -->
-               <div class="row ">
-                <div class="col-12 col-md-6 text-center">
                   <form action="https://www.paypal.com/donate" method="post"  target="_blank">
                     <input type="hidden" name="hosted_button_id" value="F3YY4W9CNJ8UW" />
                     <input style="display: none;" id="palicon"  type="submit" border="0" name="PayPal" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" >
                     <label class="btn bg-gradient-info col-12 button_wrap mx-0 text-capitalize" for="palicon">PayPal
                       <i class="fa fa-brands fa-paypal"></i>
-                      <img class="currency_icons" src="../assets/img/currencyicons/visa.png" alt="visa">
-                      <img class="currency_icons" src="../assets/img/currencyicons/mastercard.png" alt="mastercard">  
+                      <img class="currency_icons" src="./assets/img/currencyicons/visa.png" alt="visa">
+                      <img class="currency_icons" src="./assets/img/currencyicons/mastercard.png" alt="mastercard">  
                      
                       
                     </label>
                   </form>
-                </div>
-                <div class="col-12 col-md-6 text-center">
-                  <a target="_blank" href="https://rehome.pay.whitepay.com/" target="_blank" class="btn bg-gradient-info col-md-12 col-12 button_wrap text-capitalize" >Crypto
-                    <img class="currency_icons" src="../assets/img/currencyicons/visa.png" alt="visa">
-                    <img class="currency_icons" src="../assets/img/currencyicons/mastercard.png" alt="mastercard">       
-                    <img class="currency_icons btc_icon" src="../assets/img/currencyicons/btc2.png" alt="btc">   
-                    
-                  </a>  
-            
-                </div>
-                <div class="col-12 col-md-6 text-center">
+                </div> -->
+                <div class="col-12 col-xl-6 text-center">
                   <a target="_blank" href="https://secure.wayforpay.com/donate/dca5bb0033026" class="btn bg-gradient-info col-12 button_wrap text-capitalize">WayForPay
-                      <img class="currency_icons" src="../assets/img/currencyicons/visa.png" alt="visa">
-                      <img class="currency_icons" src="../assets/img/currencyicons/mastercard.png" alt="mastercard">       
+                    <img class="currency_icons" src="/assets/img/currencyicons/visa.png" alt="visa">
+                    <img class="currency_icons" src="/assets/img/currencyicons/mastercard.png" alt="mastercard">  
+                    <img class="currency_icons googlepay_icon" src="/assets/img/currencyicons/google-pay.svg" alt="google-pay">    
+                    <img class="currency_icons applepay_icon" src="/assets/img/currencyicons/apple-pay1.png" alt="apple-pay">      
                   </a>
                 </div>
-                <div class="col-12 col-md-6 text-center">
+                <div class="col-12 col-xl-6 text-center">
                   <a target="_blank" href="https://devplaton.com.ua/invoices/re-home.en/" class="btn bg-gradient-info col-12 button_wrap text-capitalize">Platon 
-                    <img class="currency_icons" src="../assets/img/currencyicons/visa.png" alt="visa">
-                    <img class="currency_icons" src="../assets/img/currencyicons/mastercard.png" alt="mastercard">      
-                    <img class="currency_icons googlepay_icon" src="../assets/img/currencyicons/google-pay.svg" alt="google-pay">    
-                    <img class="currency_icons applepay_icon" src="../assets/img/currencyicons/apple-pay1.png" alt="apple-pay"> 
+                    <img class="currency_icons" src="/assets/img/currencyicons/visa.png" alt="visa">
+                    <img class="currency_icons" src="/assets/img/currencyicons/mastercard.png" alt="mastercard">      
+                    <img class="currency_icons googlepay_icon" src="/assets/img/currencyicons/google-pay.svg" alt="google-pay">    
+                    <img class="currency_icons applepay_icon" src="/assets/img/currencyicons/apple-pay1.png" alt="apple-pay"> 
                     
                     
                   </a>
                   
+                </div>
+              </div>
+                <!-- <Блок оплаты криптой -->
+              <div class="row ">
+                <div class="col-12 text-center pb-2" >
+                  <h5>Payments with Cryptocurrency</h5>
+                </div>
+
+                <div class="col-12 text-center">
+                  <a target="_blank" href="https://rehome.pay.whitepay.com/" target="_blank" class="btn bg-gradient-info col-md-12 col-12 button_wrap text-capitalize" >Crypto
+                    <img class="currency_icons" src="/assets/img/currencyicons/visa.png" alt="visa">
+                    <img class="currency_icons" src="/assets/img/currencyicons/mastercard.png" alt="mastercard">       
+                    <img class="currency_icons btc_icon" src="/assets/img/currencyicons/btc2.png" alt="btc">   
+                    
+                  </a>  
+            
                 </div>
               </div>
 
@@ -222,7 +217,7 @@
 
                 <div class="col-12 form-control-lg card py-0">
                   <div class="card-body">
-                    Your charitable contributions will be enlisted in the national currency of Ukraine UAH, at the rate of the Visa/MasterCard payment system.
+                     Your charitable contributions will be enlisted in the national currency of Ukraine UAH, at the rate of the Visa/MasterCard payment system.
                     For easier recalculations: <span style="font-weight: 700;">1 USD = 36.57 UAH</span> 
                     Grateful thanks, for being with us!
                   </div>
@@ -233,19 +228,26 @@
               <!-- Left string link -->
               <div class="row">
                 <div class="col-12 d-flex flex-column">
-                  <h6 class="text-secondary font-weight-normal mt-auto">By clicking the button of the payment system, you agree to <a class="text-info" href="#">the processing of personal data</a></h6>
+                  <h6 class="text-secondary font-weight-normal mt-auto">By clicking the button of the payment system, you agree to <a class="text-info" data-bs-toggle="modal" href="#personalDataModal ">the processing of personal data</a></h6>
                 </div>
               </div>
-            </div>
+           </div>
 
+
+            
               <!-- right payment side -->
             <div class="col-lg-5 col-12 pb-5 px-4 nav_pay" >
+
+              <div class="row">
+                <div class="col-12 text-center pb-2" >
+                  <h5>Bank Transfer</h5> 
+                 </div>
+              </div>
               
               <div class="row text-center">
-                <label class="col-3 px-1 button_wrap" for="uan_click"><span class="pay_currency">UAN</span></label>
-                <label class="col-3 px-1 button_wrap" for="usd_click"><span class="pay_currency">USD</span></label>
-                <label class="col-3 px-1 button_wrap" for="eur_click"><span class="pay_currency">EUR</span></label>
-                <label class="col-3 px-1 button_wrap" for="btc_click"><span class="pay_currency">CRYPTO</span></label>
+                <label class="col-4 px-1 button_wrap" for="uan_click"><span class="pay_currency">UAN</span></label>
+                <label class="col-4 px-1 button_wrap" for="usd_click"><span class="pay_currency">USD</span></label>
+                <label class="col-4 px-1 button_wrap" for="eur_click"><span class="pay_currency">EUR</span></label>
               </div>
 
               <div class="row px-1">
@@ -253,9 +255,7 @@
                 <input type="radio" name="currency" id="uan_click" checked>
                 <input type="radio" name="currency" id="usd_click">
                 <input type="radio" name="currency" id="eur_click">
-                <input type="radio" name="currency" id="btc_click">
-              
-
+             
                 <!-- REQUISITES UAN -->
                 <div class="col-12 currency mt-3 form-control-lg card mx-sm-0 px-0 py-0" id="uan">
                   <div class="card-body">
@@ -444,7 +444,7 @@
                   </div>
                 </div>
                  <!-- REQUISITES CRYPTO -->
-                <div class="col-12 currency mt-3 form-control-lg card mx-sm-0 px-0 py-0" id="btc">
+                <!-- <div class="col-12 currency mt-3 form-control-lg card mx-sm-0 px-0 py-0" id="btc">
                   <div class="card-body">
 
                    
@@ -516,7 +516,7 @@
                    
                     
                   </div>
-                </div>
+                </div> -->
 
               </div>
 
@@ -1152,6 +1152,169 @@
         </div>
       </div>
     </footer>
+
+
+    <!-- Modal personalDataModal-->
+    <div
+      class="modal fade"
+      id="personalDataModal"
+      tabindex="-1"
+      aria-labelledby="personalDataModalLable"
+      aria-hidden="true"
+      >
+      <div class="modal-dialog modal-dialog-scrollable" >
+        <div class="modal-content col-12 ">
+          <div class="modal-header bg-gradient-secondary">
+            <h5 class="modal-title text-white" id="personalDataModalLable">
+              PUBLIC OFFER AGREEMENT. 
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            This public offer on the provision of funds and other property <strong>(hereinafter referred 
+            to as the Offer) as charitable contributions (donations), individuals and legal entities
+            (hereinafter referred to as the Benefactor),</strong> is aimed at an indefinite circle of persons 
+            and is a public offer of a legal entity established and registered in accordance with Ukrainian 
+            legislation,<strong>Charitable organization "CHARITABLE FOUNDATION "REBUILD TOGETHER", represented by 
+            chairman of the board Adamenko Konstantin, (hereinafter - the Organization)</strong>, conclude an agreement 
+            on the provision of charitable/donation on the following conditions: 
+            <br /><br />
+            <h4>1. General provisions </h4>
+            1.1. Contractual relations between the Benefactor and the Organization are drawn 
+            up in the form of a Public <a href="https://re-home.in.ua/" class="text-info">https://re-home.in.ua/
+            </a> in the relevant section of the "PAY" 
+            button, means that the Benefactor, regardless of legal status (individual, legal entity), 
+            in accordance with the current legislation, has accepted the terms of the Public Offer 
+            Agreement (acceptance), which are listed below. 
+            <br /><br />
+            1.2. This Agreement is public, that is, in accordance with Art. 641 of the Civil Code of Ukraine its 
+            conditions are the same for all Benefactors. 
+            <br /><br />
+            1.3. This Agreement enters into force from the moment of clicking on the "PAY" button, by which the 
+            Benefactor agrees to make a charitable donation (payment). 
+            <br /><br />
+            1.4. In order to regulate contractual legal relations under the Agreement, the Parties shall select and, 
+            if necessary, apply Ukrainian legislation. If an international treaty, the consent to be bound by which 
+            is provided by the Verkhovna Rada of Ukraine, establishes rules other than those established by Ukrainian 
+            legislation, then the rules of the international treaty apply. 
+            <br /><br />
+            <h4>2. Concepts and definitions used in the Agreement. </h4>
+            <h5>2.1. TERMS AND DEFINITIONS: </h5>
+            "Public Offer Agreement" is a public contract, a sample of which is posted on the website 
+            <a href="https://re-home.in.ua/" class="text-info">https://re-home.in.ua/</a> containing 
+            a proposal from the Organization for a charitable donation sent to an unspecified number of persons. 
+            <br /><br />
+            "Acceptance" is the acceptance by the Benefactor of the Organization's proposal to make a charitable 
+            donation by paying it to the current bank account of the Organization, or the transit account of the 
+            partner from which the funds will be transferred to the current bank account of the Organization. 
+            <br /><br /> 
+            "Charitable donation" is a free transfer by the Benefactor of funds, other property, property rights to the property 
+            of the Organization for subsequent use to achieve certain, predetermined goals of charitable activities, goals and 
+            statutory goals of the Organization.  
+            <br /><br />
+            "Benefactor" is a capable natural person or legal entity of private law (including a charitable organization) who 
+            voluntarily carries out one or more types of charitable activities that have visited the website the website 
+            <a href="https://re-home.in.ua/" class="text-info">https://re-home.in.ua/</a> and intend to pay a charitable donation.  
+            <br /><br />
+            "Organization" is a charitable organization "CHARITABLE FOUNDATION "REBUILD TOGETHER", which is registered and conducts its activities 
+            in accordance with the Constitution of Ukraine, the Law of Ukraine "On Charitable Activities and Charitable Organizations", civil legislation 
+            of Ukraine, including collecting charitable donations using the website the website 
+            <a href="https://re-home.in.ua/" class="text-info">https://re-home.in.ua/</a> .
+            <br /><br />
+            "Legislation" – the norms established by Ukrainian or international legislation for the regulation of contractual legal relations under the Treaty. 
+            <h4>3. Subject of the contract  </h4>
+            3.1. The subject of this Agreement is the free and voluntary transfer by the Benefactor to the ownership of the Organization of funds by making a charitable donation to achieve certain, predetermined goals of the Charitable Activities of the Organization.  
+            <br /><br />
+            3.2. The fulfillment by the parties to this Agreement is not intended to make a profit and its distribution or any benefits for either party. 
+            <h4>4. Rights and obligations of the Organization </h4>
+            4.1. The Organization is obliged to:
+            <ul> 
+              <li>comply with the terms of this Agreement; </li>
+              <li>use the paid charitable donations of the Benefactor solely to fulfill the Statutory Purpose of the Organization and the terms of this Agreement; </li>
+            </ul>
+            4.2. The Organization has the right to:
+            <ul>
+              <li>
+                with the consent of the Benefactor to change the directions of use of the donation within the framework of the Statutory Activities of the Organization.
+              </li>
+            </ul>
+            <h4>5. Rights and obligations of the Benefactor.</h4>
+            5.1. The benefactor is obliged to:
+            <ul>
+              <li>Familiarize yourself with the terms of this Agreement. </li>
+            </ul>
+            5.2. The benefactor has the right to: 
+            <ul>
+              <li>monitor the organization's use of charitable donations for its intended purpose. </li>
+            </ul>
+            <h4>6. Fundraising period.</h4>
+            6.1. Public fundraising continues until the termination of the Organization (by reorganization or liquidation), unless another period is determined by the decision of the Organization, about which the Benefactor will be notified by posting the relevant information on the website: the website https://re-home.in.ua. <br> <br>
+
+            <h4>7. Procedure for payment and use of charitable donation.</h4>
+            7.1. The use of charitable donation is carried out in accordance with the goals defined by the Charter of the Organization and its programs, the Law of Ukraine "On Charitable Activities and Charitable Organizations" and the Tax Code. <br> <br>
+            7.2. The benefactor can pay a charitable donation in the following ways: <br> <br>
+            1) by bank transfer of money to the current bank accounts of the Organization, which are indicated in the accounts section of the organization, including through Internet banking. <br> <br>
+            2) Bank card using payment systems: <br>
+            <ul>
+              <li>Visa</li>
+              <li>Mastercard</li>
+            </ul>
+            4) in any other way by agreement with the Organization. <br> <br>
+            
+            <h4>8. Liability of the parties and dispute resolution.</h4>
+            8.1. The Organization is liable for violation of the terms of this Agreement and the use of donations contrary to the procedure established by this Agreement, in accordance with the current legislation of Ukraine.<br> <br>
+            8.2. All disputes, disagreements or claims arising out of or in connection with this Agreement, including those relating to its implementation, violation, termination or invalidity, shall be resolved in the relevant court in accordance with international and Ukrainian substantive and procedural law. <br> <br>
+
+            <h4>9. Other conditions.</h4>
+            9.1. This agreement is concluded on the territory of Ukraine and it is subject to the substantive law of Ukraine. <br> <br>
+            9.2. The invalidity of any clause or part of this agreement does not lead to the invalidity of the contract as a whole.<br> <br>
+            9.3. All disputes arising between the Parties shall be resolved through negotiations. In case of failure to reach the settlement of the dispute, the Parties may apply for the resolution of the dispute to the judicial authorities in accordance with the current legislation.<br> <br>
+            9.4. The Organization has the right to amend the text of this agreement at its own discretion at any time and without prior notice to the Benefactors. The current (current) version of the contract is always available on the Site.<br> <br>
+            9.5. By own acceptance of payment or registration on the website the website https://re-home.in.ua (filling out the registration form) The benefactor voluntarily consents to the collection and processing of his own personal data.<br> <br>
+            <strong>For the purposes provided for in this Agreement, the Organization has the right to send letters, messages and materials to the postal address, (e-mail) of the Benefactor, as well as send SMS messages, make calls to the phone number specified in the questionnaire.</strong>
+            <br> <br>
+            9.6. The benefactor gives the right to process his personal data, including: to place personal data in the database (without additional notification of this), to carry out <strong>lifelong storage of data,</strong>  their accumulation, updating, change (if necessary). The Organization undertakes to ensure data protection from unauthorized access of third parties, not to distribute or transfer data to any third party (except in cases provided for by the Law, including at the request of the competent state body, court order, etc.).<br> <br>
+            9.7. In case of unwillingness to receive the newsletter, the Benefactor has the right to apply to the Organization by writing a statement refusing to receive news materials, sending it to a postal or e-mail address.<br> <br>
+            <p class="text-center">Ukraine, City of Kharkiv.</p>
+            <p class="text-center">2022 year.</p>
+                        
+                      
+
+
+
+
+
+
+            
+
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button
+              type="button"
+              class="btn bg-gradient-dark mb-0"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <!-- <a
+              href="./help-us.html"
+              class="btn bg-gradient-info mb-0"
+              role="button"
+              aria-pressed="true"
+              >ДОЛУЧИТИСЬ</a
+            > -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 
     <!-- Modal dimModal-->
     <div
