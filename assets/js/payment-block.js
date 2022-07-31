@@ -46,8 +46,12 @@ for (let key in copyButton){
 
 
     let info = document.getElementsByClassName("copy_info");
-    info[key].innerHTML = 'Cкопійовано';
-
+    if (info[key].innerHTML=='Copy'){
+      info[key].innerHTML = 'Сopied';
+    } else if(info[key].innerHTML=='Скопіювати'){
+      info[key].innerHTML = 'Cкопійовано';
+    }
+    
   
     let start = Date.now();
   
@@ -56,7 +60,11 @@ for (let key in copyButton){
   
       if (timePassed > 2800) {
         copyButton[key].style.color = "grey";
-        info[key].innerHTML = 'Скопіювати';
+        if (info[key].innerHTML=='Сopied'){
+          info[key].innerHTML = 'Copy';
+        }else if(info[key].innerHTML=='Cкопійовано'){
+          info[key].innerHTML = 'Скопіювати';
+        }
       }
      
   
