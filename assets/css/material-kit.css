@@ -27390,19 +27390,32 @@ pre[class*="language-"] {
 .pop_up_copy_info:hover span{
   display: block;
 }
-
-
+#copy_info_mob {
+  display: none;
+}
 @media (max-width: 991px) {
   .brake_line:before{
     content: "";
     position: absolute;
-    top: 10%;
-    
+    top: 10%;  
     right: 0;
     display: none;
     width: 1px;
     height: 80%;
     background-color: var(--bs-gray-500);
+  }
+
+  .pop_up_copy_info:hover span{
+    display: none;
+  }
+
+  #copy_info_mob {
+    text-align: center;
+    background-color: #1A73E8;
+    color: white;
+    font-weight: 500;
+    padding: 5px;
+    font-size: 23px;
   }
 }
 
@@ -27426,9 +27439,6 @@ pre[class*="language-"] {
   .break {
     display: block;
   }
-  .pop_up_copy_info:hover span{
-    display: none;
-  }
 }
 
 .googlepay_icon{
@@ -27441,3 +27451,4 @@ pre[class*="language-"] {
 .btc_icon{
   height: 28px;
 }
+
