@@ -27418,11 +27418,6 @@ pre[class*="language-"] {
     font-size: 23px;
   }
 }
-
-.red{
-  border: 1px solid red;
-}
-
 .button_wrap{
   white-space: nowrap;
   font-weight: 700;
@@ -27451,4 +27446,32 @@ pre[class*="language-"] {
 .btc_icon{
   height: 28px;
 }
+
+
+
+
+/* Description -block NEW STYLE */
+
+
+.avatar_box{
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 50%;
+  padding-top: 50%;
+  height: 0;
+  transition: 1s;
+  box-shadow: 0 10px 30px 0px #0004;
+}
+.konstantin{
+  background: url(https://rhinodesign.ru/upload/iblock/c13/c135509e2214a37e26d027898e880cc2.jpg) 50% 0/auto 100%  no-repeat;
+}
+
+.stanislav {
+  background: url(https://mefart.ru/images/portfolio/business/Business-portrait-46.jpg) 50% 20%/100% auto no-repeat;
+}
+
+.avatar_box:hover{
+  transform: scale(1.05);
+}
+
 
