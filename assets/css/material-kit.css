@@ -27463,8 +27463,7 @@ pre[class*="language-"] {
   box-shadow: 0 10px 30px 0px #0004;
 }
 .konstantin{
-  background: url(https://github.com/Tolik4umak/re-home/blob/master/assets/img/avatars/konstantyn.jpg?raw=true) 50% 0/auto 100%  no-repeat;
-
+  background: url("/assets/img/avatars/konstantyn.jpg") 50% 0/auto 100%  no-repeat;
 }
 
 .stanislav {
