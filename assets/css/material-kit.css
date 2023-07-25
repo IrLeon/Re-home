@@ -28307,8 +28307,9 @@ pre[class*="language-"] {
 }
 
 .stanislav {
-  background: url(https://mefart.ru/images/portfolio/business/Business-portrait-46.jpg)
-    50% 20%/100% auto no-repeat;
+  /* background: url(https://mefart.ru/images/portfolio/business/Business-portrait-46.jpg)
+    50% 20%/100% auto no-repeat; */
+  background: url("../img/avatars/Vadim.jpg") 50% 20%/100% auto no-repeat;
 }
 
 .avatar_box:hover {
